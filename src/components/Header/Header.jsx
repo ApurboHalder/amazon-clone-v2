@@ -39,16 +39,16 @@ const Header = () => {
           <div className="w-[58%] px-2">
             <form>
               <div className="flex items-center">
-                <select class="flex py-2.5 px-3 text-[black] bg-gray-200 border border-gray-300 rounded-l-lg">
+                <select class="flex py-2 px-3 text-[black] bg-gray-200 border border-gray-300 rounded-l-lg">
                   <option value="default">All</option>
                 </select>
                 <input
                   type="text"
                   placeholder="Search Amazon"
-                  class="block w-full placeholder-gray-400/70 border border-gray-300 bg-white px-5 py-2.5 text-black focus:border-[#FEBD69] focus:outline-none focus:ring focus:ring-[#FEBD69] focus:ring-opacity-40 "
+                  class="block w-full placeholder-gray-400/70 bg-white px-5 py-2 text-black  "
                 />
                 <button
-                  className="py-2.5 px-3 bg-[#FEBD69] rounded-r-lg"
+                  className="py-2 px-3 bg-[#FEBD69] rounded-r-lg"
                   type="submit"
                 >
                   <SearchOutlinedIcon />
@@ -110,25 +110,35 @@ const Header = () => {
         <div className=" w-full bg-[#232F3E] text-white px-4 py-2 align-middle">
           <ul className="flex gap-4 font-bold ">
             <li>
-              <a className="hover:text-[#FEBD69] flex gap-1" href="/">
+              <a className="hover:text-[#FEBD69] flex gap-1 text-sm" href="/">
                 <MenuOutlinedIcon />
                 All
               </a>
             </li>
             <li className="hover:text-[#FEBD69]">
-              <a href="/">Todays Deals</a>
+              <a className="text-sm" href="/">
+                Todays Deals
+              </a>
             </li>
             <li className="hover:text-[#FEBD69]">
-              <a href="/">Customer Service</a>
+              <a className="text-sm" href="/">
+                Customer Service
+              </a>
             </li>
             <li className="hover:text-[#FEBD69]">
-              <a href="/">Registry</a>
+              <a className="text-sm" href="/">
+                Registry
+              </a>
             </li>
             <li className="hover:text-[#FEBD69]">
-              <a href="/">Gift Cards</a>
+              <a className="text-sm" href="/">
+                Gift Cards
+              </a>
             </li>
             <li className="">
-              <a href="/">Sell</a>
+              <a className="text-sm" href="/">
+                Sell
+              </a>
             </li>
           </ul>
         </div>
