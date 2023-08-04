@@ -1,7 +1,5 @@
 import React from "react";
 
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-
 // banner images
 import banner1 from "../../assets/images/Banner/banner1m.jpg";
 
@@ -57,24 +55,16 @@ const Home = () => {
   return (
     <>
       {/* Home screen   */}
-      <div className="px-2 relative">
+      <div className="px-2 ">
         {/* banner  */}
         <div className="carousel w-full relative">
-          <div id="slide1" className="carousel-item relative w-full">
+          <div id="slide1" className="carousel-item w-full">
             <img src={banner1} className="w-full" alt="" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide2" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
           </div>
         </div>
 
         {/* main category section  */}
-        <div className="pl-4 pr-6 absolute top-[250px] mb-4">
+        <div className="pl-4 pr-6 absolute top-[350px] mb-4">
           <div className="grid grid-cols-4 gap-5">
             {/* Gaming accessories */}
             <div className="py-5 bg-white px-4">
@@ -447,22 +437,6 @@ const Home = () => {
               >
                 Shop now
               </a>
-            </div>
-          </div>
-
-          {/* browsing history */}
-          <div className="w-full bg-white my-5 p-5">
-            <div className="border-2 border-[black] rounded-lg p-5 flex justify-between align-middle items-center">
-              <p className="text-xs italic">
-                After viewing product detail pages, look here to find an easy
-                way to navigate back to pages you are interested in.
-              </p>
-              <div className="flex align-top">
-                <ArrowRightIcon />
-                <a className="text-[10px] text-[#007185] font-bold" href="/">
-                  View or edit your <br /> browsing history
-                </a>
-              </div>
             </div>
           </div>
         </div>
