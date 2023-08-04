@@ -1,5 +1,7 @@
 import React from "react";
 
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+
 // banner images
 import banner1 from "../../assets/images/Banner/banner1m.jpg";
 
@@ -154,7 +156,7 @@ const Home = () => {
                   Sign in securely
                 </button>
               </div>
-              <img className="mx-auto mt-4" src={signin1} alt="" />
+              <img className="w-[240px] mx-auto mt-4" src={signin1} alt="" />
             </div>
 
             {/* Refresh your space */}
@@ -259,17 +261,17 @@ const Home = () => {
           <div className="grid grid-cols-4 gap-5">
             {/* sub-cat-1-card-1 */}
             <div className="py-6 bg-white px-4">
-              <p className="text-xl font-bold mb-4">
+              <p className="text-xl font-bold ">
                 Frequently repurchased in Home
               </p>
               <div>
                 <img className="mx-auto" src={subCat11} alt="" />
-                <p className="text-xs my-2 px-4">
+                <p className="text-xs">
                   Camco TST MAX Camper/RV Toilet Treatment Drop-INs | Control
                   Unwanted Odors and Break…
                 </p>
                 <div>
-                  <p className="text-sm font-semibold my-2 px-4">
+                  <p className="text-sm font-semibold">
                     <sup>$</sup> 17 <sup>.59 </sup>{" "}
                     <span className="font-light text-xs">
                       List: <strike>$22.99</strike>
@@ -332,6 +334,135 @@ const Home = () => {
               >
                 Shop now
               </a>
+            </div>
+          </div>
+
+          {/* Popular products in PC internationally */}
+          <div className="bg-white px-4 py-5 my-5">
+            <p className="text-xl font-bold">
+              Popular products in Beauty internationally
+            </p>
+            <div className="grid grid-cols-6 items-center justify-items-center gap-4">
+              <img src={ssd1} alt="" />
+              <img src={monitor1} alt="" />
+              <img src={ssd2} alt="" />
+              <img src={mousepad1} alt="" />
+              <img src={mouse2} alt="" />
+              <img src={sandisk1} alt="" />
+            </div>
+          </div>
+
+          {/* Popular products in Beauty internationally */}
+          <div className="bg-white px-4 py-5 my-5">
+            <p className="text-xl font-bold">
+              Popular products in Beauty internationally
+            </p>
+            <div className="grid grid-cols-8 items-center justify-items-center gap-4">
+              <img src={panoxyl1} alt="" />
+              <img src={panoxyl2} alt="" />
+              <img src={ultraSheer1} alt="" />
+              <img src={sportFace1} alt="" />
+              <img src={lowGl1} alt="" />
+              <img src={exfoliate1} alt="" />
+              <img src={panoxyl3} alt="" />
+              <img src={toms1} alt="" />
+            </div>
+          </div>
+
+          {/* Sub category-1  */}
+          <div className="grid grid-cols-4 gap-5">
+            {/* sub-cat-1-card-1 */}
+
+            <div className="py-6 bg-white px-4">
+              <p className="text-xl font-bold ">
+                Frequently repurchased in Home
+              </p>
+              <div>
+                <img className="mx-auto" src={subCat11} alt="" />
+                <p className="text-xs">
+                  Camco TST MAX Camper/RV Toilet Treatment Drop-INs | Control
+                  Unwanted Odors and Break…
+                </p>
+                <div>
+                  <p className="text-sm font-semibold">
+                    <sup>$</sup> 17 <sup>.59 </sup>{" "}
+                    <span className="font-light text-xs">
+                      List: <strike>$22.99</strike>
+                    </span>
+                  </p>
+                </div>
+                <div className="flex gap-3 align-middle justify-center">
+                  <img
+                    className="border-4 border-[#007185] h-14 rounded-lg p-2"
+                    src={subCat111}
+                    alt=""
+                  />
+                  <img
+                    className="border-2 border-[black]  h-14 rounded-lg p-2"
+                    src={subCat112}
+                    alt=""
+                  />
+                  <img
+                    className="border-2 border-[black]  h-14 rounded-lg p-2"
+                    src={subCat113}
+                    alt=""
+                  />
+                  <img
+                    className="border-2 border-[black]  h-14 rounded-lg p-2"
+                    src={subCat114}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            {/* sub-cat-1-card-2 */}
+            <div className="py-5 bg-white px-4">
+              <p className="text-xl font-bold mb-4">New arrivals in Toys</p>
+              <img className="my-5" src={subCat12} alt="" />
+              <a
+                className="text-[#007185] hover:text-[#FFD004] text-sm"
+                href="/"
+              >
+                Shop Now
+              </a>
+            </div>
+            {/* sub-cat-1-card-3 */}
+            <div className="py-5 bg-white px-4">
+              <p className="text-xl font-bold mb-4">Discover fashion trends</p>
+              <img className="my-5" src={subCat13} alt="" />
+              <a
+                className="text-[#007185] hover:text-[#FFD004] text-sm"
+                href="/"
+              >
+                See more
+              </a>
+            </div>
+            {/* sub-cat-1-card-4 */}
+            <div className="py-5 bg-white px-4">
+              <p className="text-xl font-bold mb-4">For your Fitness Needs</p>
+              <img className="my-5" src={subCat14} alt="" />
+              <a
+                className="text-[#007185] hover:text-[#FFD004] text-sm"
+                href="/"
+              >
+                Shop now
+              </a>
+            </div>
+          </div>
+
+          {/* browsing history */}
+          <div className="w-full bg-white my-5 p-5">
+            <div className="border-2 border-[black] rounded-lg p-5 flex justify-between align-middle items-center">
+              <p className="text-xs italic">
+                After viewing product detail pages, look here to find an easy
+                way to navigate back to pages you are interested in.
+              </p>
+              <div className="flex align-top">
+                <ArrowRightIcon />
+                <a className="text-[10px] text-[#007185] font-bold" href="/">
+                  View or edit your <br /> browsing history
+                </a>
+              </div>
             </div>
           </div>
         </div>
